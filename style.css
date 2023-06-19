@@ -302,7 +302,7 @@ li a{
     color:grey;
 }
 
-li a:hover{
+a:hover{
     color:black;
 }
 
