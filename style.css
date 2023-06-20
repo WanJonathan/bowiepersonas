@@ -1,5 +1,21 @@
+/* The line of code below grants somewhat of a clean slate when it comes to formatting, making formatting easier*/
 *{margin: 0; padding: 0}
 
+/* This section deals with simple quality of life classes that help mold images and text.*/
+.aligncenter{
+    display: flex;
+    justify-content: center;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.italic{
+    font-style:italic;
+}
+
+/* This section deals with the various background colors and images used for the website.*/
 .homebackground{
     background-image: url(images/night.jpg);
 }
@@ -12,16 +28,17 @@
     background-color:rgb(255, 245, 254);
 }
 
-.jackbackground{
-    background-color:rgb(193, 167, 0);
-}
-
 .tombackground{
     background-color:rgb(3, 2, 39);
 }
 
 .ziggybackground{
     background-color:rgb(255, 146, 103);
+}
+
+.referencesbackground{
+    background-color:rgb(235, 216, 255);
+    color:rgb(143, 24, 255);
 }
 
 .minorbackgroundimage{
@@ -34,32 +51,7 @@
     width: 100%;
 }
 
-#bowietitlemain {
-    position: absolute;
-    text-align: left;
-    left: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 8px 8px brown;
-    font-size: 128px;
-    color:navy;
-}
-
-#bowietitlesecond{
-    position: absolute;
-    text-align: left;
-    left: 150px;
-    top: 120px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 6px 6px beige;
-    font-size: 56px;
-    color:brown;
-}
-
-.quotesection{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
+/* This section deals with headings and the paragraph tag. */
 
 p{
     font-size:24px
@@ -78,29 +70,7 @@ h2{
     color: DarkCyan;
 }
 
-.duketable th, td {
-    border: whitesmoke;
-}
-
-.pierrottable th, td {
-    border: whitesmoke;
-}
-
-.duketable{
-    color: whitesmoke;
-}
-
-.pierrottable{
-    color: rgb(46, 46, 46);
-}
-
-.jacktable{
-    color: rgb(255, 210, 144);
-}
-
-.tomtable{
-    color: rgb(60, 193, 255); 
-}
+/* This section deals with the tables/charts used in the non-home pages of the website */
 
 th, td{
     border: 3px solid;
@@ -115,61 +85,29 @@ table{
     width: 46%;
 }
 
-.homebackground p img { 
+/* This section deals with the color of the tables*/
+
+.duketable{
+    color: whitesmoke;
+}
+
+.pierrottable{
+    color: rgb(46, 46, 46);
+}
+
+.tomtable{
+    color: rgb(60, 193, 255); 
+}
+
+/* These lines deal with minor images on the homepage */
+
+.homeimages img { 
     float: right; 
     margin-right:125px; 
     width: 450px; 
 }
 
-.twdtitle{
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-    text-align: left;
-    margin-left:50px;
-    font-size: 96px;
-    color:whitesmoke;
-}
-
-#twdtitle2{
-    position: absolute;
-    font-family: 'Comforter';
-    font-weight: lighter;
-    text-align: left;
-    top: 315px;
-    left: 200px;
-    font-size: 28px;
-    text-shadow: 3px 3px 5px rgb(43, 42, 42);
-    color:whitesmoke;
-}
-
-.description1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: right;
-    margin-right: 650px;
-    margin-left: 75px;
-    font-size: 18px;
-    background-color: #070420;
-    color:whitesmoke;
-}
-
-.descriptionleft{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    margin-right: 450px;
-    margin-left: 175px;
-    font-size: 18px;
-    background-color:transparent;
-}
-
-.descriptionright{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    margin-left: 450px;
-    margin-right: 175px;
-    font-size: 18px;
-    background-color:transparent;
-}
+/* This section deals with the headings for various personas on the homepage */
 
 .minorpersonaheading{
     text-align: right;
@@ -184,25 +122,58 @@ table{
     color:DarkCyan;
 }
 
-.headingleft{
+/* This section deals with descriptions and their positioning */
+
+.descriptioncenter,.descriptionleft,.descriptionright{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.descriptionleft,.descriptionright{
     text-align: center;
+    background-color:transparent;
+}
+
+.descriptioncenter{
+    text-align: right;
+    margin-right: 650px;
+    margin-left: 75px;
+    background-color: #070420;
+    color:whitesmoke;
+}
+
+.descriptionleft{
     margin-right: 450px;
     margin-left: 175px;
+}
+
+.descriptionright{
+    margin-left: 450px;
+    margin-right: 175px;
+}
+
+/* This section deals with heading positioning */
+
+.headingleft,.headingright,.headingcenter{
+    text-align: center;
     line-height: 3.5;
+}
+
+.headingleft{
+    margin-right: 450px;
+    margin-left: 175px;
 }
 
 .headingright{
-    text-align: center;
     margin-left: 450px;
     margin-right: 175px;
-    line-height: 3.5;
 }
 
 .headingcenter{
-    text-align: center;
-    line-height: 3.5;
     color:rgb(255, 250, 207);
 }
+
+/* This section deals with colors and highlights for text among the pages */
 
 .dukeheadercolor{
     color:rgb(255, 250, 207);
@@ -210,10 +181,6 @@ table{
 
 .pierrotheadercolor{
     color:rgb(84, 58, 65);
-}
-
-.jackheadercolor{
-    color:rgb(255, 210, 144);
 }
 
 .tomheadercolor{
@@ -232,10 +199,6 @@ table{
     color:whitesmoke;
 }
 
-.jackcolor{
-    color:rgb(236, 255, 126);
-}
-
 .tomcolor{
     color:rgb(190, 249, 255);
 }
@@ -248,9 +211,11 @@ table{
     background-color: #070420;
 }
 
+/* This section deals with the navigation bar. */
+
 .navigation{
     position: fixed;
-    width:100%;
+    width: 100%;
     top: 0;
     left: 0;
     font-family: 'Raleway', sans-serif;
@@ -267,22 +232,43 @@ table{
     justify-content: space-between;
 }
 
-.aligncenter{
-    display: flex;
-    justify-content: center;
+/* This section is dedicated to the colors featured on each page's navigation bar's opaque background. */
+
+#dukenav{
+    background-color: rgba(63, 63, 63, 0.7);
 }
 
-.bold{
-    font-weight:bold;
+#homenav{
+    background-color: rgb(7, 4, 32, 0.7);
 }
 
-.italic{
-    font-style:italic;
+#pierrotnav{
+    background-color: rgba(185, 202, 255, 0.7);
 }
 
-li{
+#tomnav{
+    background-color: rgba(7, 15, 74, 0.7);
+}
+
+#ziggynav{
+    background-color: rgba(60, 16, 4, 0.7);
+}
+
+#tomnav{
+    background-color: rgba(7, 43, 150, 0.3);
+}
+
+#referencesnav{
+    background-color: rgba(37, 0, 112, 0.3);
+}
+
+/* These classes and indexes manage the links within the navigation bar. */
+.navigation li{
     list-style: none;
     display:inline-block;
+}
+
+.navigation li a{
     font-weight: 50;
     font-size: 24px;
     margin-right: 15px;
@@ -290,36 +276,27 @@ li{
     color:whitesmoke;
 }
 
-li a{
-    font-weight: 50;
-    font-size: 24px;
-    margin-right: 15px;
-    margin-left: 15px;
-    color:whitesmoke;
+.navigation li a:hover{
+    color:rgb(235, 137, 255);
 }
 
-.darktext li a{
+#darktext li a{
     color:grey;
 }
 
-a:hover{
-    color:black;
+#darktext li a:hover{
+    color:rgb(32, 28, 28);
 }
 
-
-.explanationpage{
-    text-align: center;
-    margin-right: 250px;
-    margin-left: 250px;
-    font-size:24px;
-    background-color:transparent;
-}
+/* This is the common format added to quotes from the website.   */
 
 .quote{
     font-size:48px;
     line-height: 2;
+    text-align: center;
 }
 
+/* The following classes define the font type and color of the quotes.  */
 .whitequote{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
     color: whitesmoke;
@@ -330,12 +307,6 @@ a:hover{
     font-family: 'Comforter';
     color: rgb(82, 17, 17);
     text-shadow: 3px 3px 5px rgb(81, 81, 81);
-}
-
-.yellowquote{
-    font-family: 'Comforter';
-    color: rgb(236, 255, 126);
-    text-shadow: 3px 3px 5px rgb(171, 195, 97);
 }
 
 .lightbluequote{
@@ -349,6 +320,8 @@ a:hover{
     color:rgb(141, 1, 1);
     text-shadow: 3px 0px 2px rgb(2, 14, 127);  
 }
+
+/* This is for large quotes used on the main page. */
 
 #quote1{
     font-size:80px;
@@ -364,48 +337,55 @@ a:hover{
     text-shadow: 12px 12px rgb(164, 163, 126);
 }
 
-#quoteauthor {
+/* This is a section where the crediting portion of quotes are stylized.  */
+
+#quoteauthor,#quoteauthor2,#quoteauthor3,#quoteauthor4,#quoteauthor5{
     font-size:24px;
+}
+
+#quoteauthor{
     color:lightcyan;
 }
 
-#quoteauthor2 {
-    font-size:24px;
+#quoteauthor2{
     color:whitesmoke;
 }
 
 #quoteauthor3{
-    font-size:24px;
     color: rgb(119, 33, 33);
 }
 
 #quoteauthor4{
-    font-size:24px;
-    color:rgb(255, 210, 144);
-}
-
-#quoteauthor5{
-    font-size:24px;
-    color:rgb(107, 233, 255);
-}
-
-#quoteauthor5{
-    font-size:24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(82, 45, 45);
 }
 
-#explanationmainpage{
+#quoteauthor5{
+    color:rgb(107, 233, 255);
+}
+
+#quoteauthor,#quoteauthor2,#quoteauthor3,#quoteauthor4,#quoteauthor5,#quote1,#quote2{
+    text-align: center;
+}
+
+/* This section is for the various individual elements on the home page */
+
+.bigdescriptiontext{
     text-align: center;
     margin-right: 250px;
     margin-left: 250px;
+}
+
+#explanationmainpage{
     font-size:24px;
 }
 
+.explanationpage{
+    font-size:24px;
+    background-color:transparent;
+}
+
 #personasheading{
-    text-align: center;
-    margin-right: 250px;
-    margin-left: 250px;
     text-decoration-line: underline;
 }
 
@@ -413,46 +393,132 @@ a:hover{
     width:54%;
 }
 
-#mainnavoption{
+/* This section is for the "Bowie's Personas" message on every page's navigation bar. There is a dark and a normal option. */
+
+.navtitle{
     font-weight: 50;
     font-size: 48px;
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway', serif; 
+}
+
+.lightnavtitle{
     text-shadow: 6px 2px brown;
     color: whitesmoke;
 }
 
-#darkmainnavoption{
-    font-weight: 50;
-    font-size: 48px;
-    font-family: 'Raleway', serif;
+.darknavtitle{
     text-shadow: 6px 2px rgb(74, 243, 255, 0.3);
     color: brown;
 }
 
-#dukenav{
-    background-color: rgba(63, 63, 63, 0.7);
+/* This section is dedicated to the images featured on the website's pages */
+
+.widecenteredimage{
+    display: block;
+    border-radius: 24px;
 }
 
-#homenav{
-    background-color: rgb(7, 4, 32, 0.7);
+/* This is class displays images as blocks*/
+.displayblock{
+    display: block;
 }
 
-#jacknav{
-    background-color: rgba(186, 85, 249, 0.7);
+/* Classes that can form the common image positions used on the website's pages*/
+.imageposright{
+    margin-right: 175px;
+    margin-left: 450px;
 }
 
-#pierrotnav{
-    background-color: rgba(185, 202, 255, 0.7);
+.imageposleft{
+    margin-right: 450px;
+    margin-left: 175px;
 }
 
-#tomnav{
-    background-color: rgba(7, 15, 74, 0.7);
+#pierrothair,#tomvideo,#ziggyface{
+    float: right;
 }
 
-#ziggynav{
-    background-color: rgba(60, 16, 4, 0.7);
+#pierrotsmoking,#tomashes{
+    float: left;
 }
 
+.lightsanding{
+    border-radius: 8px;
+}
+
+.mediumsanding{
+    border-radius: 16px;
+}
+
+/*Images used*/
+
+#scarymonsters{
+    margin-left: 350px;
+}
+
+#pierrothair{
+    margin-top: 160px;
+    margin-right: 120px;
+}
+
+#pierrotsmoking{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+#tomvideo{
+    margin-top: 25px;
+    margin-right: 125px;
+}
+
+#tomashes{
+    margin-top: 175px;
+    margin-left: 85px;
+}
+
+#ziggyface{
+    margin-top: 125px;
+    margin-right: 125px;
+}
+
+/* This section is dedicated to the titles featured on the website's pages */
+
+/* This class is simply used to make the placement of images absolute*/
+.absolute{
+    position: absolute;
+}
+
+/*Classes and indexes for the the titles on the index page*/
+
+.bowietitle{
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bowietitlemain {
+    left: 50px;
+    text-shadow: 8px 8px brown;
+    font-size: 128px;
+    color:navy;
+}
+
+#bowietitlesecond{
+    left: 150px;
+    top: 120px;
+    text-shadow: 6px 6px beige;
+    font-size: 56px;
+    color:brown;
+}
+
+/*Classes and indexes for the the titles on the thin white duke page*/
+
+.twdtitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-left:50px;
+    color:whitesmoke;
+}
 
 #twdtitle1pt1{
     text-shadow: 3px 3px 5px rgb(43, 42, 42);
@@ -464,235 +530,124 @@ a:hover{
     top:195px;
 }
 
-#manwhofelltoearth{
-    display: block;
-    border-radius: 8px;
-    margin-left: 175px;
-    margin-right: 450px;
+#twdtitle2{
+    font-family: 'Comforter';
+    top: 315px;
+    left: 200px;
+    text-shadow: 3px 3px 5px rgb(43, 42, 42);
 }
 
-#stationtostation{
-    display: block;
-    margin-left: 175px;
-    margin-right: 450px;
-}
+/*Classes and indexes for the the titles on the pierrot page*/
 
-#scarymonsters{
-    display: block;
-    margin-left: 350px;
-    margin-right: 175px;
-}
-
-#pierrothair{
-    float: right;
-    display: block;
-    border-radius: 8px;
-    margin-top: 160px;
-    margin-right: 120px;
-}
-
-#pierrotsmoking{
-    float: left;
-    display: block;
-    border-radius: 8px;
-    margin-top: 25px;
-    margin-left: 40px;
-}
-
-#dukeperforming{
-    display: block;
-    border-radius: 8px;
-    margin-right: 175px;
-    margin-left: 175px; 
-}
-
-#jackhair{
-    border-radius: 8px;
-    float: left;
-    display: block;
-    margin-top: 175px;
-    margin-left: 75px;
-}
-
-#jackguitar{
-    display: block;
-    border-radius: 8px;
-    margin-left: 175px;
-    margin-right: 450px;
-}
-
-#tomvideo{
-    float: right;
-    display: block;
-    border-radius: 16px;
-    margin-top: 25px;
-    margin-right: 125px;
-}
-
-#tomashes{
-    float: left;
-    display: block;
-    border-radius: 16px;
-    margin-top: 175px;
-    margin-left: 85px;
-}
-
-#tomblackstar{
-    border-radius: 32px;
-}
-
-#ziggyface{
-    float: right;
-    display: block;
-    border-radius: 16px;
-    margin-top: 125px;
-    margin-right: 125px;
-}
-
-#ziggyalbum{
-    display: block;
-    margin-right: 175px;
-    margin-left: 450px;
-}
-
-#ziggyarms{
-    border-radius: 24px;
-}
-
-#pierrottitle{
-    position: absolute;
+.pierrottitle{
     font-family: 'Comforter';
     font-weight: lighter;
     text-align: left;
-    margin-left:50px;
-    font-size: 96px;
     color:black;
+}
+
+#pierrottitle1{
+    margin-left: 50px;
     text-shadow: 3px 3px 5px rgb(81, 81, 81);
 }
 
 #pierrottitle2{
-    position: absolute;
-    font-family: 'Comforter';
-    font-weight: lighter;
-    text-align: left;
     top: 120px;
     left: 200px;
-    font-size: 28px;
-    color:black;
     text-shadow: 2px 2px 5px rgb(81, 81, 81);
 }
 
-#jacktitle{
-    position: absolute;
-    font-family: 'Lobster';
-    text-align: right;
-    top: 50px;
-    right: 50px;
-    font-size: 96px;
-    color:rgb(202, 145, 0);
-    text-shadow: 3px 3px 5px rgb(137, 99, 2);
-}
+/*Classes and indexes for the the titles on the major tom page*/
 
-#jacktitle2{
-    position: absolute;
-    font-family: 'Lobster';
-    text-align: right;
-    top: 195px;
-    right: 50px;
-    font-size: 96px;
-    color:rgb(202, 145, 0);
-    text-shadow: 3px 3px 5px rgb(137, 99, 2);
-}
-
-#jacktitle3{
-    position: absolute;
-    font-family: 'Comforter';
-    font-weight: lighter;
-    text-align: right;
-    top: 315px;
-    right: 200px;
-    font-size: 28px;
-    color:rgb(202, 145, 0);
-    text-shadow: 2px 2px 5px rgb(137, 99, 2);
-}
-
-#tomnav{
-    background-color: rgba(7, 43, 150, 0.3);
-}
-
-#tomtitle{
-    position: absolute;
+.tomtitle{
     font-family: 'Roboto', sans-serif;
+    color:rgb(210, 205, 255);
+    text-shadow: 3px 3px 5px rgb(154, 147, 218);
+}
+#tomtitle1{
     text-align: right;
     top:125px;
     margin-left:740px;
-    font-size: 96px;
-    color:rgb(210, 205, 255);
-    text-shadow: 3px 3px 5px rgb(154, 147, 218);
+}
+
+#tomtitle2, #tomtitle3, #tomtitle4, #tomtitle5{
+    text-align: left; 
 }
 
 #tomtitle2{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
     top:250px;
     margin-left:970px;
-    font-size: 28px;
-    color:rgb(210, 205, 255);
-    text-shadow: 3px 3px 5px rgb(154, 147, 218);
 }
 
 #tomtitle3{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
     top:300px;
-    text-align: left;
     margin-left: 1030px;
-    font-size: 28px;
-    color:rgb(210, 205, 255);
-    text-shadow: 3px 3px 5px rgb(154, 147, 218);
 }
 
 #tomtitle4{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
     top: 350px;
     margin-left: 1090px;
-    font-size: 28px;
-    color:rgb(210, 205, 255);
-    text-shadow: 3px 3px 5px rgb(154, 147, 218);
 }
 
 #tomtitle5{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
     top: 400px;
     margin-left: 1150px;
-    font-size: 28px;
-    color:rgb(210, 205, 255);
-    text-shadow: 3px 3px 5px rgb(154, 147, 218);
 }
 
-#ziggytitle{
-    position: absolute;
+/*Classes and indexes for the the titles on the ziggy page*/
+
+.ziggytitle{
     font-family: 'Tilt Prism', 'Impact',  'cursive';
-    text-align: left;
-    top:5px;
-    margin-left:55px;
-    font-size: 96px;
+    text-align: left; 
     color:rgb(123, 8, 0);
     text-shadow: 3px 3px 5px rgb(255, 220, 208);
+}
+
+#ziggytitle1{
+    top:5px;
+    margin-left:55px;
 }
 
 #ziggytitle2{
-    position: absolute;
-    font-family: 'Tilt Prism', 'Impact',  'cursive';
-    text-align: left;
-    top: 35px;
+     top: 35px;
     margin-left: 695px;
-    font-size: 28px;
-    color:rgb(123, 8, 0);
-    text-shadow: 3px 3px 5px rgb(255, 220, 208);
 }
+
+/*This section deals with the footer of the website*/
+
+footer{
+    text-align: left;
+    padding: 7px;
+    color: white;
+}
+
+#footercolorhome {
+    background-color: rgb(17, 34, 66);
+}
+
+.cssvalid{
+    border:0; 
+    width:88px;
+    height:31px
+}
+
+.htmlvalid{
+    border:0; 
+    width:88px;
+    height:31px
+}
+
+/*This section deals with the reference page                                                                                                                                                                                                                                           */
+#referencesmargins{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;                                                                                  
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+#referencestitle{
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size:96px;
+    color: rgb(25, 52, 171);
+}   
